@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title>COMP5347 Assignment One</title>
+   <link rel="stylesheet" href="index.css" />
+   <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<form method="get" action="">
+<div class="header" id="searchBox" >
+   <div  class="playerTwo" align="left">
+   <input type="text" id="myinput" size = '10' > <button type="button" onclick="myFunction()" >search</button>
+   <select name="category" id="category">
+      <option>Category</option>
+      <option>Science History</option>
+      <option>Action and Adventure</option>
+      <option>Health</option>
+      <option>Art </option>
+      <option>Sports</option>
+   </select>
+      <button  type="button" onclick="myFunction2()">Filter</button>
+   </div>
+   <div class="playerOne" align="right">
+   <button type="button" onclick="checkboxes()">Add to cart</button>
+   <button type="button" onclick="r1()">Reset the cart</button>
+   <img class="icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xMy41IDE4Yy0uODI4IDAtMS41LjY3Mi0xLjUgMS41IDAgLjgyOS42NzIgMS41IDEuNSAxLjVzMS41LS42NzEgMS41LTEuNWMwLS44MjgtLjY3Mi0xLjUtMS41LTEuNXptLTMuNSAxLjVjMCAuODI5LS42NzIgMS41LTEuNSAxLjVzLTEuNS0uNjcxLTEuNS0xLjVjMC0uODI4LjY3Mi0xLjUgMS41LTEuNXMxLjUuNjcyIDEuNSAxLjV6bTE0LTE2LjVsLS43NDMgMmgtMS45MjlsLTMuNDczIDEyaC0xMy4yMzlsLTQuNjE2LTExaDIuMTY5bDMuNzc2IDloMTAuNDI4bDMuNDMyLTEyaDQuMTk1em0tMTcgNGg4djJoLTh2LTJ6Ii8+PC9zdmc+" alt="picture" />
+      <label id="num">0</label>
+   </div>
+</div>
+<div id="listBox">
+   <h2 align="center"> Online Book Store</h2>
+   <table id="myTable">
+         <th colspan="2">Title</th>
+         <th>Authors</th>
+         <th>Year</th>
+         <th>Price</th>
+         <th>Publisher</th>
+         <th>Category</th>
+      </tr>
+      <tr >
+         <td >
+            <input type="checkbox" name="cb" class="cb" value="checked" />
+            <img src="images/01.jpg" class="im" alt="Share this on Twitter" /></td>
+            <td id="output" align="left" class="t2">content</td>
+         <td id="utput">content</td>
+         <td id="tput">content</td>
+         <td id="put">content</td>
+         <td id="ut">content</td>
+         <td id="t">content</td>
+      </tr>
+      <tr id="2">
+         <td>
+            <input type="checkbox" name="cb" class="cb" value="checked" />
+            <img src="images/11.jpg" class="im" alt="Share this on Twitter" /></td>
+         <td id="output2">content</td>
+         <td id="utput2">content</td>
+         <td id="tput2">content</td>
+         <td id="put2">content</td>
+         <td id="ut2">content</td>
+         <td id="t2">content</td>
+      </tr>
+      <tr>
+         <td>
+            <input type="checkbox" name="cb" class="cb" value="checked" />
+            <img src="images/02.jpg" class="im"alt="Share this on Twitter" /></td>
+         <td id="output3">content</td>
+         <td id="utput3">content</td>
+         <td id="tput3">content</td>
+         <td id="put3">content</td>
+         <td id="ut3">content</td>
+         <td id="t3">content</td>
+
+
+      </tr>
+      <tr>
+         <td>
+            <input type="checkbox" name="cb" class="cb" value="checked" />
+            <img src="images/22.jpg"class="im" alt="Share this on Twitter" /></td>
+         <td id="output4">content</td>
+         <td id="utput4">content</td>
+         <td id="tput4">content</td>
+         <td id="put4">content</td>
+         <td id="ut4">content</td>
+         <td id="t4">content</td>
+
+
+      </tr>
+      <tr>
+         <td>
+            <input type="checkbox" name="cb" class="cb" value="checked" />
+            <img src="images/03.jpg" class="im"alt="Share this on Twitter" /></td>
+         <td id="output5">content</td>
+         <td id="utput5">content</td>
+         <td id="tput5">content</td>
+         <td id="put5">content</td>
+         <td id="ut5">content</td>
+         <td id="t5">content</td>
+
+
+      </tr>
+      <tr>
+
+         <td>
+            <input type="checkbox" name="cb" class="cb" value="checked" />
+            <img src="images/33.jpg" class="im"alt="Share this on Twitter" /></td>
+         <td id="output6">content</td>
+         <td id="utput6">content</td>
+         <td id="tput6">content</td>
+         <td id="put6">content</td>
+         <td id="ut6">content</td>
+         <td id="t6">content</td>
+
+
+      </tr>
+      <tr>
+         <td>
+            <input type="checkbox" name="cb" class="cb" value="checked" />
+            <img src="images/04.jpg" class="im"alt="Share this on Twitter" /></td>
+         <td id="output7">content</td>
+         <td id="utput7">content</td>
+         <td id="tput7">content</td>
+         <td id="put7">content</td>
+         <td id="ut7">content</td>
+         <td id="t7">conte nt</td>
+
+
+
+      </tr>
+      <tr>
+         <td>
+            <input type="checkbox" name="cb" class="cb" value="checked" />
+            <img src="images/44.jpg" class="im"alt="Share this on Twitter" /></td>
+         <td id="output8">content</td>
+         <td id="utput8">content</td>
+         <td id="tput8">content</td>
+         <td id="put8">content</td>
+         <td id="ut8">content</td>
+         <td id="t8">content</td>
+      </tr>
+
+      <tr>
+         <td>
+            <input type="checkbox" name="cb" class="cb" value="checked" />
+            <img src="images/05.jpg" class="im"alt="Share this on Twitter" /></td>
+         <td id="output9">content</td>
+         <td id="utput9">content</td>
+         <td id="tput9">content</td>
+         <td id="put9">content</td>
+         <td id="ut9">content</td>
+         <td id="t9">content</td>
+      </tr>
+      <tr>
+         <td>
+            <input type="checkbox" name="cb" class="cb" value="checked" />
+            <img src="images/55.jpg" class="im"alt="Share this on Twitter" /></td>
+         <td id="output0">content</td>
+         <td id="utput0">content</td>
+         <td id="tput0">content</td>
+         <td id="put0">content</td>
+         <td id="ut0">content</td>
+         <td id="t0">content</td>
+      </tr>
+
+   </table>
+</div>
+</form>
+</body>
+</html>
